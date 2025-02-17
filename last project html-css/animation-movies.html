@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 3 Satır */
+  grid-template-columns: repeat(3, 1fr); /* 3 Sütun */
+  gap: 20px; /* Elemanlar arasında boşluk */
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px;
+}
+
+.movie img,
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8,
+.image-9 {
+  margin-top: 150px;
+  width: 170px;
+  height: 190px;
+  border-radius: 30px;
+}
+
+.name {
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 150px;
+}
+
+.an-names {
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: rgb(124, 2, 2);
+  color: beige;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 500px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#footer {
+  background-color: rgb(77, 2, 2);
+  color: beige;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="animation-movies">
+        <h1 class="an-names">
+            populer animation movies
+        </h1>
+
+        <div class="list">
+            <div class="movie movie-1">
+                <img src="./1.jpg" alt="#" class="image-1">
+                <br>
+                <p class="name">Dog Man</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-2">
+                <img src="./2.jpg" alt="#" class="image-2">
+                <br>
+                <p class="name">kayara</p>
+            </div>
+
+            <!-- movie end -->
+            <div class="movie movie-3">
+                <img src="./3.jpg" alt="#" class="image-3">
+                <br>
+                <p class="name">inside out 2</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-4">
+                <img src="./4.jpeg" alt="#" class="image-4">
+                <br>
+                <p class="name">elemental</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-5">
+                <img src="./5.jpg" alt="#" class="image-5">
+                <br>
+                <p class="name">moana 2</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-6">
+                <img src="./6.jpg" alt="#" class="image-6">
+                <br>
+                <p class="name">moana</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-7">
+                <img src="./yh.jpg" alt="#" class="image-7">
+                <br>
+                <p class="name">the nightmare before christmas</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-8">
+                <img src="./8.webp" alt="#" class="image-8">
+                <br>
+                <p class="name">coco</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-9"> <img src="./9.webp" alt="#" class="image-9">
+                <br>
+                <p class="name">coraline</p>
+            </div>
+            <!-- movie end -->
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h4>copyRight &copy; 2025</h4>
+                </footer>
+</body>
+</html>

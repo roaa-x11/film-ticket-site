@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*contact form */
+
+
+        .form-title {
+            text-transform: uppercase;
+            font-size: 33px;
+            margin-bottom: 0.5rem;
+            color: rgb(136, 9, 9);
+        }
+
+        @media screen and (min-width: 992px) {
+            .contact-form {
+                float: left;
+                width: 50%;
+                padding: 33px 1rem;
+            }
+
+            .contact-info {
+                width: 100%;
+                padding: 2px 2rem;
+            }
+        }
+
+
+        .main-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: rgb(103, 6, 6);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            padding: 18px 24px;
+            margin-top: 20px;
+            border: 2px solid rgb(150, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .main-btn:hover {
+            color: rgb(253, 253, 253);
+            background-color: rgb(139, 6, 6);
+            border-color: rgb(95, 43, 43);
+            outline: 0.2rem solid rgb(231, 208, 208);
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .contact-us {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer {
+            background-color: rgb(77, 2, 2);
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .form-control {
+            background: rgb(185, 185, 185);
+            width: 100%;
+            border: gray;
+            outline: none;
+            margin: 1rem 0;
+            padding: 1.3rem;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #737272;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-us">
+        <h1 class="form-title">contact us </h1>
+        <div class=" contact-form">
+            <form class="form-group" action="https://formspree.io/f/xzzzrzpo" method="POST">
+                <input type="tel"
+                    pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
+                    placeholder="Enter your phone (e.g. +14155552675)" id="phone-a880" name="phone" class="form-control"
+                    required="">
+                <input name="name" type="text" placeholder="Enter your Name" class="form-control">
+                <input type="date" name="date" placeholder="" class="form-control">
+                <textarea name="message" rows="5" placeholder="Enter your message" class="form-control">
+          </textarea>
+                <button type="submit" class="main-btn"> SUBMİT</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h4>copyRight &copy; 2025</h4>
+    </footer>
+</body>
+
+</html>

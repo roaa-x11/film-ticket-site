@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h4 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.categories {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.categorie {
+  padding-top: 40px;
+  padding: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.categorie-names {
+  padding-top: 30px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .categorie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categorie {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image {
+  border-radius: 10px;
+  background-color: linear-gradient(
+    rgba(12, 12, 12, 0.197),
+    rgba(68, 66, 66, 0.071)
+  );
+  height: 200px;
+  width: 250px;
+}
+
+.categori-image {
+  border-radius: 10px;
+  text-align: center;
+  height: 200px;
+  width: 250px;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.197), rgba(0, 0, 0, 0.071));
+}
+
+.name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: medium;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  font-weight: bold;
+  font-size: 20px;
+  width: 250px;
+}
+
+.banner-btn2 {
+  margin-top: 30px;
+  margin-left: 650px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  background-color: rgb(134, 7, 7);
+  border-radius: 10px;
+  color: beige;
+  text-transform: uppercase;
+  padding: 15px 22px;
+  text-align: center;
+}
+
+#footer {
+  background-color: rgb(77, 2, 2);
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    </style>
+</head>
+<body>
+    <section class="first">
+        <h1>Are you ready for the magic of cinema?</h1>
+        <h4> The lights slowly dim, the first scene appears on the screen, and your heartbeat quickens. There’s nothing
+            quite like this moment. A hero’s fate is about to change, a great secret will be revealed, or an unexpected
+            adventure will pull you in. Who knows? Maybe the story you’ve been waiting for is right here, right now. But
+            be careful! Tickets are selling fast, and you don’t want to miss this experience. Choose your seat, book
+            your spot, and get ready to become part of the magic on the big screen. Because cinema isn’t just
+            watched—it’s lived!</h4>
+        <a href="./index.html" class="banner-btn2">buy your ticket!</a>
+        <h1 class="categories">
+            Movie Categories
+        </h1>
+    
+        <div class="categorie-names">
+            <div class="categorie c1">
+                <a href="./animation-movies.html"> <img src="./cat2.jpg" alt="#" class="categori-image"></a>
+                <br>
+                <p class="name">animation</p>
+    
+            </div>
+            <div class="categorie c2">
+                <a href="./horror-movies.html"><img
+                        src="./e horror, a possessed d.webp"
+                        alt="#" class="image"></a>
+                <br>
+                <p class="name">horror</p>
+    
+            </div>
+            <div class="categorie c3">
+                <a href="./adventure-movies.html">
+<img src="./gol.webp" alt="#" class="categori-image">
+        
+                      </a>
+                <br>
+                <p class="name">adventure</p>
+    
+            </div>
+            <div class="categorie c4">
+                <a href="./science-fiction-movies.html">
+                      <img src="./A lone astronaut .webp" alt="#" class="categori-image"></a>
+                <br>
+                <p class="name">science fiction</p>
+    
+    
+            </div>
+        </div>
+    
+    </section>
+    <footer id="footer">
+        <h4>copyRight &copy; 2025</h4>
+    </footer>
+</body>
+</html>
+

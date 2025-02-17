@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 3 Satır */
+  grid-template-columns: repeat(3, 1fr); /* 3 Sütun */
+  gap: 20px; /* Elemanlar arasında boşluk */
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px;
+}
+
+.movie img,
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8,
+.image-9 {
+  margin-top: 150px;
+  width: 170px;
+  height: 190px;
+  border-radius: 30px;
+}
+
+.name {
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 150px;
+}
+
+.ad-names {
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: rgb(124, 2, 2);
+  color: beige;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 500px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#footer {
+  background-color: rgb(77, 2, 2);
+  color: beige;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    </style>
+</head>
+<body>
+    <section class="adventure-movies">
+        <h1 class="ad-names">
+            populer adventure movies
+        </h1>
+
+        <div class="list">
+            <div class="movie movie-1">
+                <img src="./a1.jpg" alt="#" class="image-1">
+                <br>
+                <p class="name"> Raiders of the Lost Ark</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-2">
+                <img src="./a2.jpg" alt="#" class="image-2">
+                <br>
+                <p class="name">Lawrence of Arabia</p>
+            </div>
+
+            <!-- movie end -->
+            <div class="movie movie-3">
+                <img src="./a3.jpg" alt="#" class="image-3">
+                <br>
+                <p class="name">The Lord of the Rings: The Return of the King</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-4">
+                <img src="./a4.jpg" alt="#" class="image-4">
+                <br>
+                <p class="name">Indiana Jones and the Last Crusade</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-5">
+                <img src="./a5.jpg" alt="#" class="image-5">
+                <br>
+                <p class="name">Jaws</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-6">
+                <img src="./a6.jpg" alt="#" class="image-6">
+                <br>
+                <p class="name">Avatar</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-7">
+                <img src="./a7.jpg" alt="#" class="image-7">
+                <br>
+                <p class="name">King Kong</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-8">
+                <img src="./a8.jpg" alt="#" class="image-8">
+                <br>
+                <p class="name"> The Jungle Book</p>
+            </div>
+            <!-- movie end -->
+            <div class="movie movie-9"> <img src="./a9.jpg" alt="#" class="image-9">
+                <br>
+                <p class="name">Pirates of the Caribbean: The Curse of the Black Pearl</p>
+            </div>
+            <!-- movie end -->
+        </div>
+    </section>
+    <footer id="footer">
+        <h4>copyRight &copy; 2025</h4>
+    </footer>
+    
+</body>
+</html>
